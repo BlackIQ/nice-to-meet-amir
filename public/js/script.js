@@ -5,10 +5,18 @@ $(document).ready(() => {
         $('.main').addClass('light');
         $('.navbar').addClass('navbar-light');
         $('.btn-submit').addClass('btn-dark');
+
+        $('.card').addClass('border-dark');
+        $('.card-header').addClass('border-dark');
+        $('.card-footer').addClass('border-dark');
     } else {
         $('.main').addClass('dark');
         $('.navbar').addClass('navbar-dark');
         $('.btn-submit').addClass('btn-light');
+
+        $('.card').addClass('border-light');
+        $('.card-header').addClass('border-light');
+        $('.card-footer').addClass('border-light');
     }
 
     $('.adjust').click(() => {
@@ -22,6 +30,14 @@ $(document).ready(() => {
             $('.main').addClass('dark');
             $('.navbar').addClass('navbar-dark');
             $('.btn-submit').addClass('btn-light');
+
+            $('.card').addClass('border-light');
+            $('.card-header').addClass('border-light');
+            $('.card-footer').addClass('border-light');
+
+            $('.card').removeClass('border-dark');
+            $('.card-header').removeClass('border-dark');
+            $('.card-footer').removeClass('border-dark');
         } else {
             ls.setItem('theme', 'light');
 
@@ -32,6 +48,14 @@ $(document).ready(() => {
             $('.main').addClass('light');
             $('.navbar').addClass('navbar-light');
             $('.btn-submit').addClass('btn-dark');
+
+            $('.card').addClass('border-dark');
+            $('.card-header').addClass('border-dark');
+            $('.card-footer').addClass('border-dark');
+
+            $('.card').removeClass('border-light');
+            $('.card-header').removeClass('border-light');
+            $('.card-footer').removeClass('border-light');
         }
     });
 });
