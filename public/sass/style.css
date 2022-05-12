@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Meow+Script&family=Vazirmatn:wght@300&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300&display=swap");
+.light {
   font-family: 'Vazirmatn', sans-serif;
   text-align: right;
   direction: rtl;
+  color: #262626;
+  background: white;
 }
 
-nav .navbar-brand {
+.light nav .navbar-brand {
   font-family: 'Lalezar', cursive;
 }
 
-.access {
+.light .access {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,26 +20,92 @@ nav .navbar-brand {
           justify-content: space-between;
 }
 
-.lale {
+.light .access a {
+  color: #262626;
+}
+
+.light .lale {
   font-family: 'Lalezar', cursive;
 }
 
-.intro .title {
+.light .intro .title {
   font-family: 'Lalezar', cursive;
   font-size: 4rem;
 }
 
-.send-form .title {
+.light .send-form .title {
   font-family: 'Lalezar', cursive;
   font-size: 3rem;
 }
 
-.send-form label {
+.light .send-form label {
+  font-family: 'Lalezar', cursive;
+  color: #262626;
+}
+
+.light .messages .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 4rem;
+}
+
+.light .line {
+  color: #262626;
+}
+
+.dark {
+  font-family: 'Vazirmatn', sans-serif;
+  text-align: right;
+  direction: rtl;
+  color: white;
+  background: #262626;
+}
+
+.dark nav .navbar-brand {
   font-family: 'Lalezar', cursive;
 }
 
-.messages .title {
+.dark .access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dark .access a {
+  color: white;
+}
+
+.dark .lale {
+  font-family: 'Lalezar', cursive;
+}
+
+.dark .intro .title {
   font-family: 'Lalezar', cursive;
   font-size: 4rem;
+}
+
+.dark .send-form .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 3rem;
+}
+
+.dark .send-form label {
+  font-family: 'Lalezar', cursive;
+  color: #262626;
+}
+
+.dark .send-form input, .dark .send-form textarea {
+  background: transparent;
+}
+
+.dark .messages .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 4rem;
+}
+
+.dark .line {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
