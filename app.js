@@ -8,7 +8,7 @@ const mdb = 'mongodb+srv://ninja:test1234@menblogs.ji4jf.mongodb.net/nice?retryW
 mongoose.connect(mdb)
     .then((result) => {
         console.log('Connected');
-        app.listen(3000);
+        app.listen(process.env.PORT);
     })
     .catch((error) => console.log(error));
 
