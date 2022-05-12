@@ -9,8 +9,8 @@
     <link href="css/mdb.min.css" type="text/css" rel="stylesheet" />
     <link href="sass/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body class="light">
-    <nav class="navbar navbar-light bg-white shadow-sm">
+<body class="<%= theme %>">
+    <nav class="navbar navbar-<%= theme %> bg-<%= theme %> shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">از آشنایی با امیر خوشبختم!</a>
         </div>
@@ -80,7 +80,11 @@
                         <label for="message" class=" form-label">پیغام شما</label>
                         <textarea class="form-control" name="message" id="message" placeholder="پیغام شما" rows="5"></textarea>
                         <br/>
-                        <button class="btn btn-lg btn-dark w-100">ارسال نظر محترم شما</button>
+                        <% if (theme === 'light') { %>
+                            <button class="btn btn-lg btn-dark w-100">ارسال نظر محترم شما</button>
+                        <% } else { %>
+                            <button class="btn btn-lg btn-light w-100">ارسال نظر محترم شما</button>
+                        <% } %>
                     </form>
                 </div>
             </div>
