@@ -85,7 +85,9 @@
                 </div>
             </div>
         </div>
-        <hr class="line"/>
+        <br/>
+        <br/>
+        <!-- <hr class="line"/> -->
         <div class="messages" id="messages">
             <span class=" title">پیغام های ارسال شده شما!</span>
             <br/>
@@ -95,7 +97,7 @@
                     <% messages.forEach(message => { %>
                         <div class="col-md-3">
                             <div class="m-1">
-                                <div class="card border mb-3">
+                                <div class="card border mb-4">
                                     <div class="card-header"><h5><%= message.title %></h5></div>
                                     <div class="card-body">
                                         <p><%= message.message %></p>
