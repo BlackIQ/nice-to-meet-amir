@@ -17,7 +17,9 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index');
+    Message.find().sort({createdAt: -1})
+        .then((messages) => res.render('index', {messages}))
+        .catch((error) => console.log(error));
 });
 
 app.post('/send', (req, res) => {
@@ -26,4 +28,4 @@ app.post('/send', (req, res) => {
     message.save()
         .then((result) => res.redirect('/'))
         .catch((error) => res.send(error));
-})
+});
