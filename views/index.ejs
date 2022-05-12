@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>از آشنایی با امیر خوشبختم!</title>
+    <script src="https://kit.fontawesome.com/4a679d8ec0.js" crossorigin="anonymous"></script>
+    <link href="css/mdb.min.css" type="text/css" rel="stylesheet" />
+    <link href="sass/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white border-bottom shadow-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">آز آشنایی با امیر خوشبختم!</a>
+        </div>
+    </nav>
+    <div class="container-fluid py-3 px-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="m-1">
+                    <div class="intro text-dark">
+                        <span class="title">سلام، امیرحسین هستم!</span>
+                        <br>
+                        <br>
+                        <p class="about">
+                            خب، سلام کردم و میخوام خودم رو معرفی کنم برای کسایی که نمیشناسنم.
+                            <br>
+                            همونطور که خوندید، من امیرم، توسعه دهنده نرم افزار هستم و این برنامه رو برای یه قصد خاصی راه انداختم.
+                        </p>
+                        <h3 class="lale">چرا از آشنایی با امیر خوشحالیم یا خوشبختیم؟</h3>
+                        <p>
+                            همه میرن حرف هایی رو تو ناشناس میزنن، خیلیا میان حرفای قشنگشون رو توی کامنت های توییتر مینویسند اما ولی من میخواستم یه جایی باشه که حرف های زیبای شما رو همیشه نگه دارم.
+                            <br/>
+                            پس شروع کردم به نوشتن این برنامه خیلی ساده برای اینکار.
+                        </p>
+                        <h3 class="lale">مراحل توسعه چطور بود؟</h3>
+                        <p>
+                            این برنامه با NodeJs و ExpressJs نوشته شده است و از MongoDB برای ذخیره اطلاعات استفاده میشود.
+                            <br/>
+                            این برنامه به صورت اوپن سورس هم قابل دسترس هست!
+                        </p>
+                        <h3 class="lale">امیرحسین لاوز اوپن‌سورس!</h3>
+                        <p>
+                            به طرز خیلی عجیبی توی گیتهاب و فضای اوپن‌سورس فعالیت دارم و این به نظرم خیلی خوبه.
+                            <br/>
+                            دسترسی به سورس این برنامه از طریق گیتهاب بنده از طریق <a href="https://github.com/BlackIQ/">این لینک</a> امکان پذیر است.
+                        </p>
+                        <h3 class="lale">دسترسی و یا ارتباط با امیرحسین</h3>
+                        <p>
+                            هر شبکه اجتماعی با یه آیتم GNU_Amir یا BlackIQ یا Jupiter میتونید پیدام کنید ولی لینک ها رو براتون میزارم تا اذیت نشید. بیشتر توی توییتر فعال هستم پس اونجا دسترسی بهم بیشتره.
+                        </p>
+                        <div class="access">
+                            <a href="https://amirhossein.info" class="text-dark"><i class="fa fa-user"></i></a>
+                            <a href="https://twitter.com/GNU_Amir" class="text-dark"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/BlackIQ" class="text-dark"><i class="fa fa-github"></i></a>
+                            <a href="https://linkedin.com/in/amirhosseinmohammadi" class="text-dark"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://t.me/BlackIQ" class="text-dark"><i class="fa fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="m-1 send-form">
+                    <span class="text-dark title">فرم ارسال نظر</span>
+                    <hr/>
+                    <span class="text-dark"><b>دقت داشته باشید به این نکات که:</b></span>
+                    <ul class="text-dark">
+                        <li>پر کردن فیلد های نمایش داده شده الزامی است اما لازم نیست دیتا ها تماما واقعی باشد.</li>
+                        <li>تمام پیام های ارسال شده به صورت دائمی در اینجا میماند، پس سعی کنید یه خاطره خوب ازم بنویسید!</li>
+                        <li>یادتون نره بعد از ارسال متن، یه اسکرین شات از پیام خودتون رو توییت کنید و بهم خبر بدید اگه خواستید!</li>
+                    </ul>
+                    <form>
+                        <label for="title" class="text-dark form-label">موضوع پیغام شما</label>
+                        <input class="form-control" name="title" id="title" placeholder="موضوع پیغام شما" type="text" />
+                        <br/>
+                        <label for="from" class="text-dark form-label">از طرف</label>
+                        <input class="form-control" name="from" id="from" placeholder="از طرف" type="text" />
+                        <br/>
+                        <label for="message" class="text-dark form-label">پیغام شما</label>
+                        <textarea class="form-control" name="message" id="message" placeholder="پیغام شما" rows="5"></textarea>
+                        <br/>
+                        <button class="btn btn-lg btn-dark w-100">ارسال نظر محترم شما</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="border border-dark"/>
+        <div class="messages" id="messages">
+            <span class="text-dark title">پیغام های ارسال شده شما!</span>
+        </div>
+    </div>
+</body>
+</html>
