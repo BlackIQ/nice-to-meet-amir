@@ -7,6 +7,11 @@
   background: white;
 }
 
+.light nav {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .light nav .navbar-brand {
   font-family: 'Lalezar', cursive;
 }
@@ -60,6 +65,11 @@
   background: #262626;
 }
 
+.dark nav {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .dark nav .navbar-brand {
   font-family: 'Lalezar', cursive;
 }
@@ -93,7 +103,7 @@
 
 .dark .send-form label {
   font-family: 'Lalezar', cursive;
-  color: #262626;
+  color: white;
 }
 
 .dark .send-form input, .dark .send-form textarea {
