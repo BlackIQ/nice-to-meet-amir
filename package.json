@@ -1,14 +1,14 @@
 {
   "name": "nice_to_meet_amir",
   "version": "1.0.0",
-  "description": "People can tell me goodies with this app",
+  "description": "People can tell me goodies with this app.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlackIQ/nice_to_meet_amir.git"
+    "url": "git+https://github.com/BlackIQ/nice-to-meet-amir.git"
   },
   "keywords": [
     "NodeJs",
