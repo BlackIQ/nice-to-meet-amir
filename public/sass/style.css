@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Meow+Script&family=Vazirmatn:wght@300&display=swap");
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  text-align: right;
+  direction: rtl;
+}
+
+nav .navbar-brand {
+  font-family: 'Lalezar', cursive;
+}
+
+.access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lale {
+  font-family: 'Lalezar', cursive;
+}
+
+.intro .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 4rem;
+}
+
+.send-form .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 3rem;
+}
+
+.send-form label {
+  font-family: 'Lalezar', cursive;
+}
+
+.messages .title {
+  font-family: 'Lalezar', cursive;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
