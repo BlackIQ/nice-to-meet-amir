@@ -88,6 +88,31 @@
         <hr class="line"/>
         <div class="messages" id="messages">
             <span class=" title">پیغام های ارسال شده شما!</span>
+            <br/>
+            <br/>
+            <div class="row">
+                <% if (messages.length > 0) { %>
+                    <% messages.forEach(message => { %>
+                        <div class="col-md-3">
+                            <div class="m-1">
+                                <div class="card border mb-3">
+                                    <div class="card-header"><h5><%= message.title %></h5></div>
+                                    <div class="card-body">
+                                        <p><%= message.message %></p>
+                                        <hr/>
+                                        <span>
+                                            این پیام توسط <b><%= message.from %></b> ارسال شده است <i class="fa fa-heart text-danger"></i>
+                                        </span>
+                                    </div>
+                                    <div class="card-footer"><small><%= message.createdAt %></small></div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <h4>متاسفانه پیغامی ثبت نشده است هنوز!</h4>                
+                <% } %>
+            </div>
         </div>
     </div>
 
