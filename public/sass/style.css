@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300&display=swap");
+.pointer {
+  cursor: pointer;
+}
+
 .light {
   font-family: 'Vazirmatn', sans-serif;
   text-align: right;
@@ -45,6 +49,27 @@
 
 .light .send-form label {
   font-family: 'Lalezar', cursive;
+  color: #262626;
+}
+
+.light .send-form input, .light .send-form textarea {
+  color: #262626;
+  background: transparent;
+}
+
+.light .send-form input::-webkit-input-placeholder, .light .send-form textarea::-webkit-input-placeholder {
+  color: #262626;
+}
+
+.light .send-form input:-ms-input-placeholder, .light .send-form textarea:-ms-input-placeholder {
+  color: #262626;
+}
+
+.light .send-form input::-ms-input-placeholder, .light .send-form textarea::-ms-input-placeholder {
+  color: #262626;
+}
+
+.light .send-form input::placeholder, .light .send-form textarea::placeholder {
   color: #262626;
 }
 
@@ -107,7 +132,24 @@
 }
 
 .dark .send-form input, .dark .send-form textarea {
+  color: white;
   background: transparent;
+}
+
+.dark .send-form input::-webkit-input-placeholder, .dark .send-form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.dark .send-form input:-ms-input-placeholder, .dark .send-form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.dark .send-form input::-ms-input-placeholder, .dark .send-form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.dark .send-form input::placeholder, .dark .send-form textarea::placeholder {
+  color: white;
 }
 
 .dark .messages .title {
