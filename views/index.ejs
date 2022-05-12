@@ -9,19 +9,18 @@
     <link href="css/mdb.min.css" type="text/css" rel="stylesheet" />
     <link href="sass/style.css" type="text/css" rel="stylesheet" />
 </head>
-<body class="<%= theme %>">
-    <nav class="navbar navbar-<%= theme %> bg-<%= theme %> shadow-sm">
+<body class="dark">
+    <nav class="navbar fixed-top navbar-dark shadow-0">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">از آشنایی با امیر خوشبختم!</a>
         </div>
     </nav>
-    <div class="container-fluid py-3 px-3">
+    <div class="container-fluid py-5 px-3">
         <div class="row">
             <div class="col-md-6">
                 <div class="m-1">
                     <div class="intro ">
                         <span class="title">سلام، امیرحسین هستم!</span>
-                        <br>
                         <br>
                         <p class="about">
                             خب، سلام کردم و میخوام خودم رو معرفی کنم برای کسایی که نمیشناسنم.
@@ -80,11 +79,7 @@
                         <label for="message" class=" form-label">پیغام شما</label>
                         <textarea class="form-control" name="message" id="message" placeholder="پیغام شما" rows="5"></textarea>
                         <br/>
-                        <% if (theme === 'light') { %>
-                            <button class="btn btn-lg btn-dark w-100">ارسال نظر محترم شما</button>
-                        <% } else { %>
-                            <button class="btn btn-lg btn-light w-100">ارسال نظر محترم شما</button>
-                        <% } %>
+                        <button class="btn btn-lg btn-light w-100">ارسال نظر محترم شما</button>
                     </form>
                 </div>
             </div>
