@@ -72,13 +72,13 @@
                     </ul>
                     <form method="post" action="/send">
                         <label for="title" class=" form-label">موضوع پیغام شما</label>
-                        <input class="form-control" name="title" id="title" placeholder="موضوع پیغام شما" type="text" />
+                        <input class="form-control" name="title" id="title" placeholder="موضوع پیغام شما" type="text" required />
                         <br/>
                         <label for="from" class=" form-label">از طرف</label>
-                        <input class="form-control" name="from" id="from" placeholder="از طرف" type="text" />
+                        <input class="form-control" name="from" id="from" placeholder="از طرف" type="text" required />
                         <br/>
                         <label for="message" class=" form-label">پیغام شما</label>
-                        <textarea class="form-control" name="message" id="message" placeholder="پیغام شما" rows="5"></textarea>
+                        <textarea class="form-control" name="message" id="message" placeholder="پیغام شما" rows="5" required></textarea>
                         <br/>
                         <button class="btn btn-lg btn-submit w-100">ارسال نظر محترم شما</button>
                     </form>
