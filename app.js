@@ -2,15 +2,20 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Message = require('./modules/message');
 
+require('dotenv').config();
+
 const app = express();
 
-const mdb = 'mongodb+srv://ninja:test1234@menblogs.ji4jf.mongodb.net/nice?retryWrites=true&w=majority';
+const mdb = 'mongodb+srv://' + process.env.DB_USERNAME + ':' + process.env.DB_PASSWORD + '@' + process.env.DB_DATABASE + '.ji4jf.mongodb.net/' + process.env.DB_COLLECTION + '?retryWrites=true&w=majority';
 mongoose.connect(mdb)
     .then((result) => {
         console.log('Connected');
         app.listen(process.env.PORT);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => {
+        console.log(mdb);
+        console.log(error);
+    });
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
